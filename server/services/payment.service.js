@@ -82,7 +82,7 @@ export const getPaymentsAnalytics = async () => {
       const d = new Date(p.createdAt);
       return d.getMonth() === currentMonth && d.getFullYear() === currentYear;
     })
-    .reduce((acc, item) => acc + Number(item.amount), 0);
+    .reduce((acc, item) => acc + Number(item.amount || 0), 0);
 
   // UNIVERSITY REVENUE
   const universityRevenueMap = {};

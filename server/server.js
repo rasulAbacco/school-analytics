@@ -12,8 +12,8 @@ const app = express();
 // ✅ ENABLE CORS
 app.use(
   cors({
-    // origin: "https://school-analytics-e72s.onrender.com", // your frontend
-    origin: "http://localhost:5174", // your frontend
+    origin: "https://school-analytics-e72s.onrender.com", // your frontend
+    // origin: "http://localhost:5174", // your frontend
     credentials: true
   })
 );
